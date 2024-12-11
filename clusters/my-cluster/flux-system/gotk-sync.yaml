@@ -10,7 +10,7 @@ spec:
     branch: main
   secretRef:
     name: flux-system
-  url: https://github.com/YOUR_GITHUB_USERNAME/k3s-flux-lab
+  url: https://github.com/alokjani/k3s-flux-lab
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
