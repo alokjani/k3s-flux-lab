@@ -30,6 +30,9 @@ Vagrant.configure("2") do |config|
         # Save the token for worker nodes
         cp /var/lib/rancher/k3s/server/node-token /vagrant/node-token
         cp /etc/rancher/k3s/k3s.yaml /vagrant/kubeconfig
+
+	# Install ohmybash
+        bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
       SHELL
     end
   end
