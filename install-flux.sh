@@ -9,6 +9,7 @@ flux version
 
 # Bootstrap Flux in the cluster
 flux bootstrap git \
-  --url=https://github.com/YOUR_GITHUB_USERNAME/k3s-flux-lab \
+  --url=ssh://git@github.com/alokjani/k3s-flux-lab \
+  --private-key-file=id_rsa \
   --branch=main \
-  --path=./clusters/my-cluster
+  --path=./clusters/{cluster_name}
